@@ -1,0 +1,2 @@
+Design a In-Memory File System following solid principles and also, write some filters to
+retrieve files with different filters.
