@@ -1,28 +1,25 @@
 package com.satyam.parkinggarage.model;
 
 
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "users")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private int id;
+
+    @Column(name = "username")
     private String userName;
+
+    @Column(name = "password")
     private String password;
-
-    public User(String userName, String password) {
-        this.userName = userName;
-        this.password = password;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
