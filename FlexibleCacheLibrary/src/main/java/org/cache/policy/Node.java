@@ -1,39 +1,28 @@
-package org.cache;
+package org.cache.policy;
 
-public class Node {
-    private int key;
-    private int value;
+public class Node<Key> {
+    private Key key;
     private Node next;
     private Node prev;
 
-    public Node(int key, int value) {
+    public Node(Key key) {
         this.key = key;
-        this.value = value;
         this.next = null;
         this.prev= null;
     }
 
-    public Node(int key, int value, Node next, Node prev) {
+    public Node(Key key, Node next, Node prev) {
         this.key = key;
-        this.value = value;
         this.next = next;
         this.prev = prev;
     }
 
-    public int getKey() {
+    public Key getKey() {
         return key;
     }
 
-    public void setKey(int key) {
+    public void setKey(Key key) {
         this.key = key;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
     }
 
     public Node getNext() {
