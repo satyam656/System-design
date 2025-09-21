@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+          http://www.springframework.org/schema/beans
+          https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    &lt;!&ndash; Define dependencies &ndash;&gt;-->
+<!--    <bean id="rateLimiterFactory" class="com.google.rateLimiter.factory.RateLimiterFactory" />-->
+
+<!--    <bean id="configRepository" class="com.google.config.repository.PropertiesBasedConfigRepository" />-->
+
+<!--    &lt;!&ndash; Wire dependencies via constructor &ndash;&gt;-->
+<!--    <bean id="rateLimiterService" class="com.google.service.RateLimiterService">-->
+<!--        <constructor-arg ref="rateLimiterFactory"/>-->
+<!--        <constructor-arg ref="configRepository"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="configLoader" class="configLoader">-->
+<!--        <constructor-arg ref=""-->
+<!--    </bean>-->
+
+</beans>
